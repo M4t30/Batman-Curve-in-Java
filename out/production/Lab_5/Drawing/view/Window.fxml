@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Drawing.view.WindowController">
+   <children>
+      <MenuBar prefHeight="65.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ProgressBar fx:id="calculationProgressBar" layoutX="14.0" layoutY="154.0" prefHeight="0.0" prefWidth="324.0" progress="0.0" AnchorPane.leftAnchor="14.0" />
+      <Label fx:id="ProgressTxtLabel" layoutX="111.0" layoutY="109.0" text="Progress" AnchorPane.leftAnchor="111.0" />
+      <Button fx:id="stopBtn" layoutX="14.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleStopButtonAction" text="STOP" AnchorPane.leftAnchor="14.0" />
+      <Button fx:id="startBtn" layoutX="213.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleStartBtnAction" text="START" />
+      <Canvas fx:id="canvas" height="713.0" layoutX="347.0" layoutY="76.0" width="841.0" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="76.0" />
+      <Label layoutX="48.0" layoutY="378.0" text="Number of Poinits" />
+      <Label fx:id="resultLabel" layoutX="111.0" layoutY="672.0" text="Result" />
+      <TextField fx:id="numberofPointsTxtFld" layoutX="6.0" layoutY="440.0" prefHeight="65.0" prefWidth="324.0" />
+      <Label layoutX="111.0" layoutY="621.0" text="Result" />
+   </children>
+</AnchorPane>
